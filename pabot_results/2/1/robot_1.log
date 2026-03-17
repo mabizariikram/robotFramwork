@@ -1,0 +1,12 @@
+2026-03-17 12:55:32.423537 [ WARN ] Error in file 'C:\Users\user\Desktop\robotFramwork\pages\login_page.resource' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.
+2026-03-17 12:55:32.475951 ==============================================================================
+2026-03-17 12:55:32.478059 Browslogin :: fonctionnalite d'authentification
+2026-03-17 12:55:32.478118 ==============================================================================
+2026-03-17 12:55:52.604519 login valide :: test de login avec des credentials valides            | PASS |
+2026-03-17 12:55:52.625182 ------------------------------------------------------------------------------
+2026-03-17 12:56:05.435083 login invalide :: test de login avec des credentials invalides        | PASS |
+2026-03-17 12:56:05.450968 ------------------------------------------------------------------------------
+2026-03-17 12:56:05.451005 Browslogin :: fonctionnalite d'authentification                       | PASS |
+2026-03-17 12:56:05.460691 2 tests, 2 passed, 0 failed
+2026-03-17 12:56:05.460723 ==============================================================================
+2026-03-17 12:56:05.460732 Output:  C:\Users\user\Desktop\robotFramwork\pabot_results\2\1\output.xml

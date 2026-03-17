@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.4.2 (Python 3.13.9 on win32)" generated="2026-03-17T12:56:05.696332" rpa="false" schemaversion="5">
+<suite id="s1" name="Browslogin" source="C:\Users\user\Desktop\robotFramwork\tests\browslogin.robot">
+<test id="s1-t1" name="login valide" line="9">
+<kw name="init browser" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:32.478795" level="INFO">Opening browser 'chrome' to base url 'https://saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-17T12:55:32.478378" elapsed="2.402351"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-03-17T12:55:34.881160" elapsed="0.001981"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-17T12:55:34.883363" elapsed="0.058780"/>
+</kw>
+<status status="PASS" start="2026-03-17T12:55:32.477412" elapsed="2.465026"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-03-17T12:55:34.942923" elapsed="0.001789"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:34.945670" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T12:55:34.944959" elapsed="0.345494"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:35.291784" level="INFO">Typing text 'secret_sauce' into text field 'css:#password'.</msg>
+<arg>css:#password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T12:55:35.291125" elapsed="0.227161"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:35.519085" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T12:55:35.518701" elapsed="0.519363"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:36.102409" level="INFO">${url } = https://www.saucedemo.com/inventory.html</msg>
+<var>${url }</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2026-03-17T12:55:36.038558" elapsed="0.064001"/>
+</kw>
+<kw name="Should Not Be Equal As Strings" owner="BuiltIn">
+<arg>${url}</arg>
+<arg>https://www.saucedemo.com/inventory</arg>
+<doc>Fails if objects are equal after converting them to strings.</doc>
+<status status="PASS" start="2026-03-17T12:55:36.103112" elapsed="0.001421"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T12:55:36.105301" elapsed="3.018487"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T12:55:39.124383" elapsed="0.000289"/>
+</kw>
+<doc>test de login avec des credentials valides</doc>
+<tag>e2e</tag>
+<tag>valid</tag>
+<status status="PASS" start="2026-03-17T12:55:32.476029" elapsed="6.648800"/>
+</test>
+<test id="s1-t2" name="login invalide" line="29">
+<kw name="init browser" owner="keywords" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:39.127659" level="INFO">Opening browser 'chrome' to base url 'https://saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-17T12:55:39.127157" elapsed="5.053569"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-03-17T12:55:44.181277" elapsed="0.006172"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-17T12:55:44.187947" elapsed="0.099408"/>
+</kw>
+<status status="PASS" start="2026-03-17T12:55:39.126541" elapsed="5.161453"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:44.289591" level="INFO">Typing text 'wrong_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>wrong_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T12:55:44.288634" elapsed="0.331143"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:44.620482" level="INFO">Typing text 'wrong_password' into text field 'css:#password'.</msg>
+<arg>css:#password</arg>
+<arg>wrong_password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T12:55:44.620129" elapsed="0.197399"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:44.818624" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-17T12:55:44.818027" elapsed="0.198314"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-17T12:55:45.052193" level="INFO">Current page contains text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-17T12:55:45.016790" elapsed="0.035623"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T12:55:45.052822" elapsed="2.673039"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-17T12:55:47.726392" elapsed="0.000198"/>
+</kw>
+<doc>test de login avec des credentials invalides</doc>
+<tag>regression</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-03-17T12:55:39.125616" elapsed="8.601051"/>
+</test>
+<doc>fonctionnalite d'authentification</doc>
+<status status="PASS" start="2026-03-17T12:55:32.168000" elapsed="15.250000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">e2e</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">valid</stat>
+</tag>
+<suite>
+<stat name="Browslogin" id="s1" pass="2" fail="0" skip="0">Browslogin</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-17T12:55:32.473025" level="WARN">Error in file 'C:\Users\user\Desktop\robotFramwork\pages\login_page.resource' on line 20: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

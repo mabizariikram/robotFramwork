@@ -1,0 +1,17 @@
+--suite Browslogin
+--variable CALLER_ID:7d86160ae58d4d19bba0dfb8eea7c7e7
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:0
+--variable PABOTISLASTEXECUTIONINPOOL:0
+--variable PABOTNUMBEROFPROCESSES:3
+--variable PABOTQUEUEINDEX:1
+--variable PABOTLASTLEVEL:Browslogin.PABOT_noend
+--argumentfile ./firefox.txt
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--outputdir .\pabot_results\2\1
+--consolecolors off
+--consolemarkers off
+tests/browslogin.robot

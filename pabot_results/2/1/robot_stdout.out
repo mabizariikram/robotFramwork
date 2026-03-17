@@ -1,0 +1,11 @@
+==============================================================================
+Browslogin :: fonctionnalite d'authentification
+==============================================================================
+login valide :: test de login avec des credentials valides            | PASS |
+------------------------------------------------------------------------------
+login invalide :: test de login avec des credentials invalides        | PASS |
+------------------------------------------------------------------------------
+Browslogin :: fonctionnalite d'authentification                       | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\user\Desktop\robotFramwork\pabot_results\2\1\output.xml

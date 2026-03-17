@@ -1,0 +1,3 @@
+***Test Cases***,${username},${password},${result}
+a,standard_user,secret_sauce,success
+b,wwrong_user,wrong_pass,fail

@@ -1,0 +1,6 @@
+rp_endpoint=http://localhost:8080
+rp_project=default_personal
+rp_uuid=TON_UUID
+rp_launch=robot_tests
+rp_launch_attributes=robot
+rp_enable=true
